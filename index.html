@@ -1,0 +1,233 @@
+!DOCTYPE html
+html lang=zh-CN
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleCat丨Anhui的个人空间title
+    link href=httpsfonts.googleapis.comcss2family=Noto+Sans+SCwght@300;400;500;700&display=swap rel=stylesheet
+    style
+         {
+            margin 0;
+            padding 0;
+            box-sizing border-box;
+        }
+        
+        body {
+            font-family 'Noto Sans SC', sans-serif;
+            color white;
+            overflow-x hidden;
+            background linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height 100vh;
+        }
+        
+        #particles-js {
+            position fixed;
+            width 100%;
+            height 100%;
+            top 0;
+            left 0;
+            z-index -1;
+        }
+        
+        .container {
+            max-width 1200px;
+            margin 0 auto;
+            padding 2rem;
+            position relative;
+            z-index 1;
+        }
+        
+        header {
+            text-align center;
+            padding 5rem 0;
+        }
+        
+        h1 {
+            font-size 4rem;
+            font-weight 300;
+            margin-bottom 1rem;
+            background linear-gradient(to right, #4facfe, #00f2fe);
+            -webkit-background-clip text;
+            background-clip text;
+            color transparent;
+            text-shadow 0 0 10px rgba(79, 172, 254, 0.3);
+        }
+        
+        .subtitle {
+            font-size 1.5rem;
+            font-weight 300;
+            margin-bottom 2rem;
+            opacity 0.8;
+        }
+        
+        .content {
+            padding 3rem 0;
+            text-align center;
+        }
+        
+        .bilibili-btn {
+            display inline-block;
+            padding 1rem 2rem;
+            background linear-gradient(45deg, #00a1d6, #23ade5);
+            color white;
+            text-decoration none;
+            border-radius 50px;
+            font-size 1.2rem;
+            font-weight 500;
+            margin-top 2rem;
+            transition all 0.3s ease;
+            box-shadow 0 4px 15px rgba(0, 161, 214, 0.3);
+        }
+        
+        .bilibili-btnhover {
+            transform translateY(-3px);
+            box-shadow 0 6px 20px rgba(0, 161, 214, 0.4);
+        }
+        
+        footer {
+            text-align center;
+            padding 2rem 0;
+            opacity 0.6;
+            font-size 0.9rem;
+        }
+        
+        @media (max-width 768px) {
+            h1 {
+                font-size 2.5rem;
+            }
+            
+            .subtitle {
+                font-size 1.2rem;
+            }
+        }
+    style
+head
+body
+    div id=particles-jsdiv
+    
+    div class=container
+        header
+            h1Cat丨Anhuih1
+            p class=subtitle欢迎来到我的个人空间p
+        header
+        
+        div class=content
+            p这里是我的GitHub博客，分享我的学习笔记和项目经验p
+            a href=httpsspace.bilibili.com3546391875947173spm_id_from=333.1007.0.0 class=bilibili-btn访问我的B站空间a
+        div
+        
+        footer
+            &copy; 2025 Cat丨Anhui. All rights reserved.
+        footer
+    div
+    
+    script src=httpscdn.jsdelivr.netparticles.js2.0.0particles.min.jsscript
+    script
+        particlesJS(particles-js, {
+            particles {
+                number {
+                    value 80,
+                    density {
+                        enable true,
+                        value_area 800
+                    }
+                },
+                color {
+                    value #ffffff
+                },
+                shape {
+                    type circle,
+                    stroke {
+                        width 0,
+                        color #000000
+                    },
+                    polygon {
+                        nb_sides 5
+                    }
+                },
+                opacity {
+                    value 0.5,
+                    random false,
+                    anim {
+                        enable false,
+                        speed 1,
+                        opacity_min 0.1,
+                        sync false
+                    }
+                },
+                size {
+                    value 3,
+                    random true,
+                    anim {
+                        enable false,
+                        speed 40,
+                        size_min 0.1,
+                        sync false
+                    }
+                },
+                line_linked {
+                    enable true,
+                    distance 150,
+                    color #4facfe,
+                    opacity 0.4,
+                    width 1
+                },
+                move {
+                    enable true,
+                    speed 2,
+                    direction none,
+                    random false,
+                    straight false,
+                    out_mode out,
+                    bounce false,
+                    attract {
+                        enable false,
+                        rotateX 600,
+                        rotateY 1200
+                    }
+                }
+            },
+            interactivity {
+                detect_on canvas,
+                events {
+                    onhover {
+                        enable true,
+                        mode grab
+                    },
+                    onclick {
+                        enable true,
+                        mode push
+                    },
+                    resize true
+                },
+                modes {
+                    grab {
+                        distance 140,
+                        line_linked {
+                            opacity 1
+                        }
+                    },
+                    bubble {
+                        distance 400,
+                        size 40,
+                        duration 2,
+                        opacity 8,
+                        speed 3
+                    },
+                    repulse {
+                        distance 200,
+                        duration 0.4
+                    },
+                    push {
+                        particles_nb 4
+                    },
+                    remove {
+                        particles_nb 2
+                    }
+                }
+            },
+            retina_detect true
+        });
+    script
+body
+html
